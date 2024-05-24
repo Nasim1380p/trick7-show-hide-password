@@ -1,0 +1,29 @@
+ let flag=1
+        const input=document.querySelector('#inp')
+        const hide=document.getElementById('hide')
+        const i1=document.querySelector('#i1')
+        const i2=document.querySelector('#i2')
+        const text=document.getElementById('text')
+        hide.addEventListener('click',()=>{
+            
+            if(flag%2){
+                input.type='text'
+                i2.style.display='flex'
+                i1.style.display='none'
+            }else{
+                input.type='password'
+                i1.style.display='flex'
+                i2.style.display='none'
+            }
+            flag++
+        })
+        btn.addEventListener('click',()=>{
+           if(input.value !='' & text.value !=''){
+
+          
+            alert(text.value +'' +' عزیز شما وارد شدید ')
+           }
+           else{
+            alert('اطلاعات شما کامل نیست')
+           }
+        })
